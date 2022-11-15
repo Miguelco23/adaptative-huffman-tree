@@ -4,7 +4,7 @@
 ## Team members 🤜🏽🤛🏽
 * [Miguel Cabrera](https://github.com/Miguelco23 "GitHub")
 * [Benjamin De la Torre](https://github.com/bened18 "GitHub")
-* [Sebastian]("GitHub")
+* [Sebastian Marin](https://github.com/smaring2 "GitHub")
 
 ## Compilator used ✅
 Python 3.10.6
