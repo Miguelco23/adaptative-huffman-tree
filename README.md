@@ -1,4 +1,4 @@
-# Adaptative Huffman Tree 🎄
+# Adaptive Huffman Tree 🎄
 📚 Practice #3 of Computer organization subject. Adaptative Huffman tree algorithm
 
 ## Team members 🤜🏽🤛🏽
@@ -14,3 +14,7 @@ Python 3.10.6
 ___
 
 ## Description 📝
+
+### Initial class diagram
+
+![class diagram](class-diagram-1.jpeg)
