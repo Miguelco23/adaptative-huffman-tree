@@ -11,19 +11,29 @@ def checkFrecuency(obj, text):
         obj[i] = text.count(i)
 
     
-# Metodo para ordenar la cola de prioridad e imprimirla
-def printOrdenedFrequency(freq):
+# Metodo para ordenar la cola de prioridad
+def orderFrecuency(freq):
+    sortedF = sorted(freq.items(), key=lambda x: x[1],)
+    return sortedF
 
-    sortedFreq = sorted(freq.items(), key=lambda x: x[1],)
- 
-    cont = 106 
-    for i in sortedFreq:  
-        print(i)
-        cont = cont - 1
-        if cont == 0: 
-            return
+  
     
+#Escribir archivo
+def writeFile(text, filename):
 
+    def listToString(s):
+ 
+        str1 = ""
+ 
+        for ele in s:
+            str1 += "01"
+ 
+        return str1
+
+    file = open(filename, 'w')
+    print(text)
+    print(listToString(text))
+    file.write(listToString(text))
 
 
 
@@ -36,7 +46,12 @@ if __name__ == "__main__":
 
     freq = {}
     checkFrecuency(freq, archivo)
-    printOrdenedFrequency(freq)
+    newFreq = orderFrecuency(freq)
+
+    print("Cual es el nombre del archivo comprimido?")
+    nombre = input()
+    writeFile(newFreq, nombre)
+
 
 
 
