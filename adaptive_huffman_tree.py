@@ -23,18 +23,13 @@ def split(a: list, n: int):
         
         # instantiating process with arguments
         for hilo in separate:
-            #print(name)
             proc = Process(target=huffmantree, args=(hilo,identificador,))
-            #file = open(f"./compress{identificador}.txt", "w")
-            #file.write(proc)
-            #file.close()
             identificador = identificador + 1
             procs.append(proc)
             proc.start()
         # complete the processes
         for proc in procs:
             proc.join()
-        #print(list((a[i*k+min(i, m):(i+1)*k+min(i+1, m)] for i in range(n)))) 
         return separate
     elif n <= 0:
         return "Por lo menos debe haber 1 hilo"
